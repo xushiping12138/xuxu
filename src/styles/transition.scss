@@ -1,0 +1,208 @@
+@import './animate.css';
+/*globl transition css*/
+
+/*fade*/
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.28s;
+}
+
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
+}
+
+/*fade-transform 淡入淡出*/
+
+.fade-transform-leave-active,
+.fade-transform-enter-active {
+  transition: all .5s;
+}
+
+.fade-transform-enter {
+  opacity: 0;
+  transform: translateX(-30px);
+}
+
+.fade-transform-leave-to {
+  opacity: 0;
+  transform: translateX(30px);
+}
+
+/*breadcrumb transition 面包屑*/
+
+.breadcrumb-enter-active,
+.breadcrumb-leave-active {
+  transition: all .5s;
+}
+
+.breadcrumb-enter,
+.breadcrumb-leave-active {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+.breadcrumb-move {
+  transition: all .5s;
+}
+
+.breadcrumb-leave-active {
+  position: absolute;
+}
+
+/*rubberBand 橡皮圈*/
+
+.rubberBand-enter-active {
+  animation-name: rubberBand;
+  animation-duration: 1s;
+}
+
+.rubberBand-leave-active {
+  animation-name: fadeOut;
+  animation-duration: .5s;
+}
+
+/*pulse 脉搏*/
+
+.pulse-enter-active {
+  animation-name: pulse;
+  animation-duration: .5s;
+}
+
+.pulse-leave-active {
+  animation-name: fadeOut;
+  animation-duration: 1s;
+}
+
+/*bounce 反弹*/
+
+.bounce-enter-active {
+  animation-name: bounceIn;
+  animation-duration: .5s;
+}
+
+.bounce-leave-active {
+  animation-name: bounceOut;
+  animation-duration: .5s;
+}
+
+/*bounce-left 反弹*/
+
+.bounce-left-enter-active {
+  animation-name: bounceInLeft;
+  animation-duration: .5s;
+}
+
+.bounce-left-leave-active {
+  animation-name: bounceOutRight;
+  animation-duration: .5s;
+}
+
+/*bounce-up 反弹*/
+
+.bounce-up-enter-active {
+  animation-name: bounceInUp;
+  animation-duration: .5s;
+}
+
+.bounce-up-leave-active {
+  animation-name: bounceOutUp;
+  animation-duration: .5s;
+}
+
+/*fade-up 淡入淡出*/
+
+.fade-up-enter-active {
+  animation-name: fadeInUp;
+  animation-duration: .5s;
+}
+
+.fade-up-leave-active {
+  animation-name: fadeOutUp;
+  animation-duration: .5s;
+}
+
+/*fade-left 淡入淡出*/
+
+.fade-left-enter-active {
+  animation-name: fadeInLeft;
+  animation-duration: .5s;
+}
+
+.fade-left-leave-active {
+  animation-name: fadeOutRight;
+  animation-duration: .5s;
+}
+
+/*flip 翻转*/
+
+.flip-enter-active {
+  animation-name: flip;
+  animation-duration: .5s;
+}
+
+.flip-leave-active {
+  animation-name: flipOutY;
+  animation-duration: .5s;
+}
+
+/*lightSpeed 跑车*/
+
+.lightSpeed-enter-active {
+  animation-name: lightSpeedIn;
+  animation-duration: .2s;
+}
+
+.lightSpeed-leave-active {
+  animation-name: lightSpeedOut;
+  animation-duration: .2s;
+}
+
+/*rotate 旋转*/
+
+.rotate-enter-active {
+  animation-name: rotateIn;
+  animation-duration: .5s;
+}
+
+.rotate-leave-active {
+  animation-name: rotateOut;
+  animation-duration: .5s;
+}
+
+/*zoom 变焦*/
+
+.zoom-enter-active {
+  animation-name: zoomIn;
+  animation-duration: .5s;
+}
+
+.zoom-leave-active {
+  animation-name: zoomOut;
+  animation-duration: .5s;
+}
+
+/*zoom-down 变焦*/
+
+.zoom-down-enter-active {
+  animation-name: zoomInDown;
+  animation-duration: .5s;
+}
+
+.zoom-down-leave-active {
+  animation-name: zoomOutDown;
+  animation-duration: .5s;
+}
+
+/*hinge 铰链*/
+
+.hinge-enter-active {
+  animation-name: jackInTheBox;
+  animation-duration: .5s;
+}
+
+.hinge-leave-active {
+  animation-name: hinge;
+  animation-duration: 1.5s;
+}

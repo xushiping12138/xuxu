@@ -1,0 +1,260 @@
+ //覆盖一些element-ui样式
+ .el-breadcrumb__inner,
+ .el-breadcrumb__inner a {
+   font-weight: 400 !important;
+ }
+
+ .el-upload {
+   input[type="file"] {
+     display: none !important;
+   }
+ }
+
+ .el-upload__input {
+   display: none;
+ }
+
+ .cell {
+   .el-tag {
+     margin-right: 0px;
+   }
+ }
+
+ .small-padding {
+   .cell {
+     padding-left: 5px;
+     padding-right: 5px;
+   }
+ }
+
+ .fixed-width {
+   .el-button--mini {
+     padding: 7px 10px;
+     width: 60px;
+   }
+ }
+
+ .status-col {
+   .cell {
+     padding: 0 10px;
+     text-align: center;
+     .el-tag {
+       margin-right: 0px;
+     }
+   }
+ } //暂时性解决dialog 问题 https://github.com/ElemeFE/element/issues/2461
+ .el-dialog {
+   transform: none;
+   left: 0;
+   position: relative;
+   margin: 0 auto;
+ } //文章页textarea修改样式
+ .article-textarea {
+   textarea {
+     padding-right: 40px;
+     resize: none;
+     border: none;
+     border-radius: 0px;
+     border-bottom: 1px solid #bfcbd9;
+   }
+ } //element ui upload
+ .upload-container {
+   .el-upload {
+     width: 100%;
+     .el-upload-dragger {
+       width: 100%;
+       height: 200px;
+     }
+   }
+ } //dropdown
+ .el-dropdown-menu {
+   a {
+     display: block
+   }
+ } // element ui 滚动条
+ .el-scrollbar__wrap {
+   overflow-x: hidden;
+ } // 解决select显示不全问题
+ .el-select-dropdown__wrap {
+   overflow-x: scroll;
+ } // 解决tabs蓝色边框问题
+ .el-tabs__item:focus.is-active.is-focus:not(:active) {
+   box-shadow: none;
+ }
+
+ .theme1 {
+   // table颜色
+   .el-table tr[class="table-header"] th {
+     background: rgb(48, 65, 86);
+   }
+   .el-table thead {
+     color: #fff;
+   }
+   .el-table .warning-row {
+     background: oldlace;
+   }
+   .el-table .success-row {
+     background: #f0f9eb;
+   }
+   .el-table--enable-row-hover .el-table__body tr:hover>td {
+     background-color: rgba(48, 176, 144, 0.5);
+   }
+   .el-table__body tr.current-row>td {
+     background-color: #30B08F !important;
+   } // input
+   .el-input-group__append,
+   .el-input-group__prepend {
+     background-color: #409eff;
+     color: #fff;
+     border: 1px solid #409eff;
+   } //tree
+   .el-tree--highlight-current .el-tree-node.is-current>.el-tree-node__content {
+     background: #e2a624cb;
+   }
+   .el-tree-node>.el-tree-node__content:hover {
+     background: #1dbe2ac0;
+   }
+   .el-tree {
+     font-size: 12px;
+     color: #000;
+     .iconfont {
+       font-size: 20px;
+     }
+     .icon-sides {
+       color: #208ed3;
+     }
+     .icon-patrol {
+       color: #de690a;
+     }
+     .icon-DMA {
+       color: #47b11b;
+     }
+   } //dialog
+   .el-dialog {
+     background-color: rgba(0, 0, 0, 0);
+     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0);
+   }
+   .el-dialog__header {
+     padding: 0;
+   }
+   .el-dialog__headerbtn {
+     top: 64px;
+     z-index: 9999;
+     .el-dialog__close {
+       color: #000;
+     }
+   }
+   .el-dialog__body {
+     padding: 0;
+   }
+   .el-tabs--card>.el-tabs__header .el-tabs__nav {
+     border: none;
+   }
+   .el-tabs__header {
+     margin: 0;
+   }
+   .el-tabs__content {
+     background-color: #fff;
+     padding: 20px;
+   }
+   .el-tabs--card>.el-tabs__header .el-tabs__item.is-active {
+     border-bottom: 1px solid transparent;
+     background: #fff;
+   }
+   .el-tabs--card>.el-tabs__header .el-tabs__item {
+     border-bottom: 1px solid #a3a7af;
+     border-left: 1px solid #a3a7af;
+     background: #ddd;
+     border-top-left-radius: 20px;
+     border-top-right-radius: 20px;
+     &:first-child {
+       border-left: 1px solid transparent;
+     }
+   }
+   .el-tabs__item:focus.is-active.is-focus:not(:active) {
+     box-shadow: none;
+     border-top-left-radius: 20px;
+     border-top-right-radius: 20px;
+   }
+   // site-tree
+   .el-select {
+    .el-select-dropdown__list {
+      width: 240px;
+    }
+   } 
+ }
+
+ .theme2 {
+   .el-tabs--border-card {
+     background: #fff;
+     border: 1px solid #333;
+     border-top: none;
+     border-right: none;
+     box-shadow: none;
+   }
+   .el-tabs--border-card>.el-tabs__header {
+     border-bottom: 1px solid #333;
+     background-color: #fff;
+   }
+   .el-tabs__nav {
+     border-top: solid 1px #333;
+   }
+   .el-tabs--border-card>.el-tabs__header .el-tabs__item {
+     border-top: solid 1px #333;
+     border-right: 1px solid #333;
+     border-left: 1px solid #333;
+     border-bottom: 1px solid #333;
+     color: #333;
+     background-color: #ddd;
+   }
+   .el-tabs--border-card>.el-tabs__header .el-tabs__item.is-active {
+     border-bottom: 1px solid transparent;
+     border-right: 1px solid #333;
+     background: #fff;
+     color: #409EFF;
+   }
+   .el-tabs--border-card>.el-tabs__content {
+     border-right: solid 1px #333;
+   }
+   .el-tabs__item:focus.is-active.is-focus:not(:active) {
+     border-radius: 0px;
+   }
+ }
+
+  // .theme3 {
+  //   .el-tabs--border-card {
+  //     border: none;
+  //     box-shadow: none;
+  //   }
+  //   .el-tabs--border-card>.el-tabs__header {
+  //     background-color: #fff;
+  //     border-bottom: none; 
+
+  //   }
+  //   .el-tabs__item{
+  //     font-size: 12px;
+  //     font-family: '微软雅黑';
+  //     height: 30px;
+  //     line-height: 30px;
+  //   }
+  //   .el-tabs__nav {
+  //     border: solid 1px #eaeaea;
+  //   }
+  //   .el-tabs--border-card>.el-tabs__header .el-tabs__item {
+  //     color: #626262;
+  //     border-right: solid 1px #eaeaea;
+  //   }
+  //   .el-tabs--border-card>.el-tabs__header .el-tabs__item.is-active {
+  //     color: #fff;
+  //     background-color: #29a1f7;
+  //     border-right-color: #29a1f7;
+  //     border-left-color: #29a1f7;
+  //   }
+  //   .el-tabs--border-card>.el-tabs__content {
+  //    padding: 15px 0;
+  //   }
+  //   .el-tabs__item:focus.is-active.is-focus:not(:active) {
+  //     box-shadow: none;
+  //     border-radius: 0px;
+  //   }
+  // }
